@@ -1,8 +1,10 @@
+import { Outlet } from "react-router-dom";
+
 function App() {
   return (
-    <>
-      <h1>Hello world</h1>
-    </>
+    <div className="min-w-full min-h-dvh bg-slate-100">
+      <Outlet />
+    </div>
   );
 }
 
