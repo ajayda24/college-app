@@ -9,7 +9,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        element: <AuthOutlet fallbackPath="login" />,
+        element: <AuthOutlet fallbackPath="/" />,
         children: [
           {
             path: "/dashboard",
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "login",
+        path: "/",
         element: <Login />,
       },
     ],

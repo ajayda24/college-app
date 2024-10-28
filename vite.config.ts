@@ -26,9 +26,9 @@ export default defineConfig({
         "icons/android-chrome-192x192.png",
       ],
       manifest: {
-        name: "My Awesome App",
-        short_name: "MyApp",
-        description: "My Awesome App description",
+        name: "College App",
+        short_name: "CollegeApp",
+        description: "College Details",
         theme_color: "#ffffff",
         icons: [
           {
