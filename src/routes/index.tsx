@@ -1,6 +1,7 @@
 import App from "@/App";
-import Login from "@/features/Auth/Login";
-import AuthOutlet from "@auth-kit/react-router/AuthOutlet";
+import AuthPage from "@/features/Auth/Page";
+import DashboardPage from "@/features/Dashboard/Page";
+// import AuthOutlet from "@auth-kit/react-router/AuthOutlet";
 import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -9,17 +10,17 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        element: <AuthOutlet fallbackPath="/" />,
+        // element: <AuthOutlet fallbackPath="/" />,
         children: [
           {
             path: "/dashboard",
-            element: <div>hello</div>,
+            element: <DashboardPage />,
           },
         ],
       },
       {
         path: "/",
-        element: <Login />,
+        element: <AuthPage />,
       },
     ],
   },
